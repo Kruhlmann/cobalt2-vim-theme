@@ -1,6 +1,7 @@
 " Vim color file
 " Author: Gertjan Reynaert (port from theme of Wes Bos)
 " Notes:  Cobalt2 color scheme port for VIM
+" Modified by: Andreas Krühlmann (@Kruhlmann)
 
 set background=dark
 
@@ -250,7 +251,7 @@ fun! s:X(group, fg, bg, attr, lcfg, lcbg)
 endfun
 
 if !exists("g:cobalt_bg")
-  let g:cobalt_bg = "193549"                                            "#193549
+  let g:cobalt_bg = "193549"                                           " #193549
 end
 
 " General colors
@@ -263,6 +264,7 @@ let g:light_grey = "9E9E9E"                                            " #9E9E9E
 let g:lighter_grey = "BCBCBC"                                          " #BCBCBC
 let g:lightest_grey = "CCCCCC"                                         " #CCCCCC
 let g:white = "FFFFFF"                                                 " #FFFFFF
+let g:cobalt_cursorline = "274765"                                     " #274765
 
 let g:dark_orange = "FF9A00"                                           " #FF9A00
 let g:light_orange = "FF9D00"                                          " #FF9D00
@@ -357,7 +359,7 @@ call s:X("Visual","",g:darker_blue,"","","Black")
 
 call s:X("Cursor",g:cobalt_bg,g:yellow,"","","")
 call s:X("CursorColumn","",g:yellow,"","","Black")
-call s:X("CursorLine","",g:yellow,"","","Black")
+call s:X("CursorLine","",g:cobalt_cursorline,"","","Black")
 call s:X("CursorLineNr",g:light_blue,"","none","White","")
 call s:X("LineNr",g:dark_grey,g:cobalt_bg,"none","Black","")
 
