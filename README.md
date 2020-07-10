@@ -1,6 +1,9 @@
 Cobalt2 Vim
 ===========
 
+This fork contains a sensible cursor line color. It is now a slightly lighter version
+of the background color, whereas before it was a eye-popping yellow.
+
 Install
 -------
 
